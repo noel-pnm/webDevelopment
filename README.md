@@ -1,2 +1,2 @@
 # webDevelopment
-Learning space for #100Devs bootcamp
+Repository for work completed during #100Devs bootcamp.
