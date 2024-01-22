@@ -1,0 +1,106 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* header,footer {
+     height: 100px;
+     border: 1px solid black;
+     clear: both;
+}
+
+section{
+     width: 33.3333%;
+     height: 200px;
+     border: 1px solid black;
+     float: left;
+} */
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* blue until 600px wide */
+@media screen and (max-width: 600px){
+     header{
+          background: blue;
+     }
+
+     header,footer {
+          height: 100px;
+          border: 1px solid black;
+          clear: both;
+     }
+     
+     section{
+          width: 33.3333%;
+          height: 200px;
+          border: 1px solid black;
+          float: left;
+     }
+     
+
+}
+
+/* red until 1200px wide */
+@media screen and (max-width: 1200px){
+     section{
+          background: red;;
+     }
+
+     header,footer {
+          height: 50px;
+          border: 1px solid black;
+          clear: both;
+     }
+     
+     section{
+          width: 33.3333%;
+          height: 100px;
+          border: 1px solid black;
+          float: left;
+     }
+     
+}
+
+/* green until 2400px wide */
+@media screen and (max-width: 2400px){
+     footer{
+          background: green;
+     }
+
+     header,footer {
+          height: 400px;
+          border: 1px solid black;
+          clear: both;
+     }
+     
+     section{
+          width: 33.3333%;
+          height: 600px;
+          border: 1px solid black;
+          float: left;
+     }
+     
+}

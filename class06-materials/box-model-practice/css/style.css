@@ -25,5 +25,5 @@ section{
     height: 200px;
     text-align: center;
     border: 2px solid purple;
-    margin: 0 auto;
+    margin: 0 auto; /* centered */
 }
