@@ -25,18 +25,47 @@ body {
 
 }
 
-
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
 
+header nav > *{
+  float: left;
+  width: 10%;
+  margin: 1% 5%;
 }
 
-footer {
+header nav li{
+  float: left;
+  width: 33.33%
+}
 
+ul{
+  list-style: none;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+/*NAVIGATION*/
+
+/*SECTION*/
+section{
+  border-top: 1px solid grey;
+  padding-top: 50px;
+  float: left;
+  width: 50%;
+}
+
+section li{
+  float: left;
+  width: 10%;
+  border: 1px solid blue;
+  margin: 1%;
+  padding: auto 0;
+  background: blue;
+  a:link{
+    color: white;
+  }
+}
