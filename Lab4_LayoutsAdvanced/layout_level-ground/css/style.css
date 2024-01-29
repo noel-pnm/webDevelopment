@@ -25,18 +25,70 @@ body {
 
 }
 
+p, a, span{
+  display: block;
+  border: 1px solid black;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
 
-}
-
-footer {
-
+header, section, footer{
+  width: 100%;
+  text-align: center;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+.logo{
+  border: 1px solid red;
+}
+
+header{
+  background: rgb(102, 117, 138);
+  ul{
+    list-style: none;
+    li{
+      float: left;
+      padding: 5px;
+      a{
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+  
+      }
+    }
+  }
+}
+
+li+li+li+li{
+  float: right;
+}
+
+footer{
+  background: rgb(22, 31, 42);
+}
+
+/* section 2 */
+.filler{
+  background: rgb(102, 117, 138);
+  width: 50%;
+  height: 125px;
+}
+
+article{
+  background: rgb(219, 223, 226);
+  width: 50%;
+  float: left;
+  padding: 40px;
+}
+
+.spanButton{
+  border: 1px solid black;
+  margin: 2px;
+  padding: 10px;
+}
+
