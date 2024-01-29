@@ -20,23 +20,138 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
-body {
-
-}
-
+/* 
+*{
+  border: 1px solid black;
+} */
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px){
+  /* *{
+    border: 1px solid red;
+  } */
+
+  /* HEADER STYLE */
+  header ul, header button{
+    display:none;
+  }
+
+  header img{
+    float: left;
+  }
+
+  header{
+    text-align: center;
+    border-bottom: 2px solid grey;
+    padding: 5% 0 5% 0;
+  }
+
+  /* LANDING STYLE */
+  .main{
+    
+    section{
+      margin-top: 10%;
+    }
+
+    h1, span, input, button, p{
+      width: 90%;
+      height: 10%;
+      margin-left: 5%;
+      margin-bottom: 2%;
+    }
+
+    img{
+      float: right;
+    }
+
+  }
+  
+  .sub{
+    display:none;
+  }
 
 }
 
-footer {
+/* On screens that are 601px and greater */
 
-}
+@media (min-width: 601px) {
+  
+/******************************************
+/* HEADER
+/*******************************************/
+  header{
+    width: 100%;
+    height: 10vh;
+  }
+
+
+  header *{
+    border: 1px solid black;
+  }
+  
+  header > img{
+    display: none;
+  }
+
+  header a, header ul, header li, header button{
+    float: left;
+  }
+
+  header a, header button{
+    width: 10vw;
+  }
+
+  header ul{
+    width: 50vw;
+    margin-right: 15vw;
+    margin-left: 15vw;
+    li{
+      list-style: none;
+      justify-content: center;
+    }
+  }
 
 /******************************************
-/* ADDITIONAL STYLES
+/* SECTIONS
 /*******************************************/
+
+.sectionCenter{
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+
+.main{
+  clear: both;
+  border: 1px solid black;
+
+  height: 60vh;
+  section{
+    float:left;
+    border: 1px solid black;
+    height: 100%;
+    width: 50%;
+  }
+  img{
+    float:right;
+    border: 1px solid red;
+    height: 100%;
+    width: 50%;
+
+  }
+}
+  .sub{
+    float: left;
+    article{
+      width: 25%;
+      float: left;
+      padding-right: 15%;
+      span{
+        display: block;
+      }
+    }
+  }
+}
