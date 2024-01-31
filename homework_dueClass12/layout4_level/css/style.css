@@ -21,22 +21,187 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-
+.floatr{
+  float:right;
+  color: rgb(102, 117, 138);
+  background: white;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 2em;
+  margin-right: 2em
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
+  background: rgb(102, 117, 138);
+  height: 100px;
+  nav{
+    width: 90%;
+    height: 100px;
+    margin-left:5%;
+    margin-right:5%;
+    text-align:center;
+    a{
+      float: left;
+      padding: 10px;
+      margin-top: 2em;
+      margin-right: 2em;    
+      color: white;
+      text-decoration: none;
+    }
+    img{
+      padding-top: 2em;
+      padding-right: 50px;
+    }
+  }
+
 
 }
 
-footer {
+.main{
+  width: 100%;
+  height: 500px;
+  padding-top: 100px;
+  background: rgb(102, 117, 138);
+  text-align: center;
+  h1, p, a, span{
+    display: block;
+    margin: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 60px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+  }
 
+  h1{
+    font-size: 48px;
+  }
+
+  span{
+    color: black;
+    font-style: italic;
+  }
+}
+
+.sub1{
+  width: 100%;
+  height: 500px;
+  padding-top: 100px;
+  text-align: center;
+  h2, p{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 60px;
+   }
+
+   a{
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid black;
+    color: black;
+    padding: 10px;
+   }
+}
+
+.sub2{
+  width: 100%;
+  height: 600px;
+  padding-top: 100px;
+  background: rgb(219, 223, 226);
+  text-align: center;
+  section{
+    width:50%;
+    float:left;
+    aside{
+      border: 1px solid rgb(102, 117, 138);
+      height:200px;
+      background: rgb(102, 117, 138);
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    h3, p, a{
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    
+    p{
+      margin-bottom: 50px;
+    }
+
+    a{
+      border: 1px solid rgb(102, 117, 138);
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+   }
+}
+
+footer {
+  background: rgb(22, 31, 42);
+  section{
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+    height: 300px;
+  
+    div{
+      float: left;
+  
+      ul{
+        list-style: none;
+        float: left;
+      }
+    
+    }
+    div+div{
+      float: right;
+    }
+  
+    p{
+      float: left;
+    }
+  
+    p + img{
+      border: 1px solid ;
+      float: right;
+    }
+  }
+
+  aside{
+    float: left;
+    width: 100%;
+    border-top: 1px solid white;
+    padding-top: 3px;
+
+  }
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+.greyText{
+  color: rgb(96, 111, 132);
+  font-weight: bold;
+}
+
+.stacked{
+  padding-left: 0;
+  li{
+    float: left;
+    padding-right: 30px;
+  }
+}
+
+.nextline{
+  clear: both;
+  display: block;
+}
