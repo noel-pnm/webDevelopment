@@ -21,20 +21,74 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-
+body > *{
+  width:80vw;
+  margin-left: 10vw;
 }
 
+h1{
+  font-size: 64px;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+a,span{
+  font-size: 16px;
+}
+
+span{
+  color: orange;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+.top {
+  height: 5vh;
+  border: 1px solid black;
+  ul{
+    padding:0;
+    list-style: none;
+    float: right;
+    li{
+      margin-right: 10px;
+      float: left;
+      a{
+        text-decoration: none;
+        color:black;
+      }
+    }
+  }
 
 }
 
-footer {
-
+.landing {
+  padding-top: 200px;
+  width: 50%;
+  height: 55vh;
+  float: left;
+  input{
+    width: 65%;
+    height: 40px;
+  }
+  button{
+    height: 40px;
+    width: 25%;
+    background: orange;
+    color: white;
+  }
+  ul{
+    list-style: none;
+    margin-top: 50px;
+    li{
+      float: left;
+      margin-right: 50px;
+    }
+  }
 }
 
 /******************************************
