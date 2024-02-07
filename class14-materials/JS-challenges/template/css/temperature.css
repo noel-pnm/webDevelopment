@@ -1,0 +1,36 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  
+section, form, fieldset{
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    align-self: center;
+}
+
+section{
+    max-width: 500px;
+    min-width: 250px;
+    margin-left: 10px;
+    h1{
+        align-self: center;
+    }
+}
+
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  

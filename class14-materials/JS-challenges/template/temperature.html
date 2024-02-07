@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>celcius to fahrenheit temperature converter</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/temperature.css">
+	</head>
+	<body>
+		<section>
+			<h1>Simple Temperature Converter</h1>
+			<form onsubmit="return false">
+				<fieldset>
+					<legend>Temperature Conversion</legend>
+					<div> 
+						<input type="radio" id="cel" name="unit" value="celcius">
+						<label for="cel">celcius</label>
+	
+						<input type="radio" id="fah" name="unit" value="fahrenheit">
+						<label for="fah">fahrenheit</label>			
+					</div>
+
+					<input type="number" id="startTemp">
+					<input type="submit" id="convert">
+
+					<span>Temperature:</span>
+					<p class="result"></p>
+				</fieldset>
+			</form>
+		</section>
+		<script type="text/javascript" src="js/temperature.js"></script>
+	</body>
+</html>
