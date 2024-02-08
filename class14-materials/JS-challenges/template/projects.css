@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box
+}
+
+.flex{
+    display: flex;
+}
+
+/* *************/
+/* Base Styles */
+/* *************/
+body, ul, section{
+    flex-flow: column;
+}
+
+h2, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    flex-basis: 300px;
+    justify-content: flex-start;
+    border: 1px solid black;
+}
+
+/* *************/
+/* Other Style */
+/* *************/
+
+.pick{
+    flex-basis: 10px;
+    max-width: 100px;
+}
+
+ul{
+    flex-basis: 200px;
+    justify-content: space-around;
+}
+
+ul.project1 li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25px;
+}
+
+/* Project 1 Styles */
+.color1-1{
+    background: red;
+    color: white;
+}
+
+.color1-2{
+    background: green;    
+    color: white;
+}
+
+.color1-3{
+    background: blue;
+    color: white;
+}
+
+.color1-4{
+    background: purple;
+    color: white;    
+}
+/* Project 1 Styles */
