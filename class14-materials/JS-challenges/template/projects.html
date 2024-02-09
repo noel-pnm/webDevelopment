@@ -10,20 +10,27 @@
 
 <body class="flex">
     <h1>#100devs - Intro JavaScript Projects Lectures 12-14</h1>
-    <section class="flex">
-        <h2>Project 1 - Picker</h2>
-        <p>Purpose: Allow user to select various options that will change style of another element</p>
-        <ul id="bgColor" class="flex">
-            <li id="test" class="pick flex color1-1">Red</li>
-            <li class="pick flex color1-2">Green</li>
-            <li class="pick flex color1-3">Blue</li>
-            <li class="pick flex color1-4">Purple</li>
-        </ul>
-    </section class="flex">
+    <div>
+        <section class="flex">
+            <h2>Project 1 - Picker</h2>
+            <p>Purpose: Allow user to select various options that will change style of another element</p>
+            <ul id="bgColor" class="flex">
+                <li id="test" class="pick flex color1-1">Red</li>
+                <li class="pick flex color1-2">Green</li>
+                <li class="pick flex color1-3">Blue</li>
+                <li class="pick flex color1-4">Purple</li>
+            </ul>
+        </section class="flex">
+    </div>
     <section>
         <h2>Project 2 - Date Checker</h2>
         <p>Purpose: allow the user to provide a date as a string. Depending on the date, provide feedback to the user if
             it is the weekend, Tue/Thur or a boring day</p>
+        <form id="userInput" onsubmit="return false">
+            <input type="text" placeholder="Day of the week" id="day">
+            <button id="submitDate">Submit</button>
+            <output form="userInput" id="userOutput"></output>
+        </form>
     </section class="flex">
     <section>
         <h2>Project 3 - Simple Calculator</h2>
@@ -34,7 +41,6 @@
         <h2>Project 4 - Angry Parent Simulator</h2>
         <p>Purpose: Allow the user to provide multiple text inputs, concatenate all the inputs and set them to
             uppercase, bolded and in red. Display the new results to the user</p>
-
     </section>
     <section class="flex">
         <h2>Project 5 - Temperature Converter</h2>

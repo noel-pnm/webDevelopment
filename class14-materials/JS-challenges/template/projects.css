@@ -27,7 +27,6 @@ section{
 /* *************/
 /* Other Style */
 /* *************/
-
 .pick{
     flex-basis: 10px;
     max-width: 100px;
@@ -65,4 +64,10 @@ ul.project1 li{
     background: purple;
     color: white;    
 }
-/* Project 1 Styles */
+/* Project 2 Styles */
+
+#form{
+    margin: 10px 0;
+}
+
+
