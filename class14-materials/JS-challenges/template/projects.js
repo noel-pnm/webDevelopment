@@ -94,11 +94,11 @@ function checkDate(){
 
 // document.querySelector('.tempUnitBtn').addEventListener('click', initialUnits);
 document.querySelector('#convertTemp').addEventListener('click', convertTemp);
-document.querySelector('#convertTemp').addEventListener('click', setTemp);
+// document.querySelector('#convertTemp').addEventListener('click', setTemp);
 
-function setTemp{
+// function setTemp{
     
-}
+// }
 
 console.log(document.querySelector('.radio').classList)
 
