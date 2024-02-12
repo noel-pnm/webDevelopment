@@ -89,4 +89,24 @@ function checkDate(){
     5. Show user the converted temperature value and units.
 */
 
+// Create event listeners, waiting for a click on the radio buttons.
+// Create event listeners, waiting for a click on the submit button.
 
+// document.querySelector('.tempUnitBtn').addEventListener('click', initialUnits);
+document.querySelector('#convertTemp').addEventListener('click', convertTemp);
+document.querySelector('#convertTemp').addEventListener('click', setTemp);
+
+function setTemp{
+    
+}
+
+console.log(document.querySelector('.radio').classList)
+
+function convertTemp(initialUnits){
+    let initialTemperature = document.querySelector('.numberInput').value;
+    let finaltemperature = initialTemperature * (9/5) + 32;
+    document.querySelector('#newTemperature').innerText = finaltemperature;
+}
+
+// using the innerHTML property poses a security vulnerability, as it allows for javascript injection
+// Use the InnerText property to modify the content of an element

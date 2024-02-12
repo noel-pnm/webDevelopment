@@ -70,4 +70,14 @@ ul.project1 li{
     margin: 10px 0;
 }
 
+fieldset{
+    width: 1000px;
+    
+}
 
+#temperatureForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 500px;
+}

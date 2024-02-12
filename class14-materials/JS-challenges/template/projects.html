@@ -46,6 +46,19 @@
         <h2>Project 5 - Temperature Converter</h2>
         <p>Purpose: Allow the user to provide a temperature. Perform a temperature conversion. Disply the new results to
             the user </p>
+        <fieldset>
+            <legend>Temperature Conversion</legend>
+            <form id="temperatureForm" action="#" onsubmit="return false">
+                <input type="radio" name="radio" id="cel" class="tempUnitBtn">
+                <label for="cel">Celcius</label>
+                <input type="radio" name="radio" id="fah" class="tempUnitBtn">
+                <label for="fah">Fahrenheit</label>
+                <input type="number" class="numberInput">
+                <button id="convertTemp">Submit</button>
+                <output form="temperatureForm">The converted temperature is:</output>
+                <span id="newTemperature">0</span>
+            </form>
+        </fieldset>
     </section>
     <section class="flex">
         <h2>Project 6 - Bachelor Selector</h2>
