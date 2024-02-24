@@ -104,7 +104,6 @@ function copyAndSortArr(arr){
 // Create an extendable calculator
 // importance: 5
 // Create a constructor function Calculator that creates “extendable” calculator objects.
-
 // The task consists of two parts.
 // First, implement the method calculate(str) that takes a string like "1 + 2" in the format “NUMBER operator NUMBER” (space-delimited) and returns the result. Should understand plus + and minus -.
 // Usage example:
@@ -126,18 +125,22 @@ function copyAndSortArr(arr){
 // There may be error handling if you’d like to add it.
 
 // Object Constructor Function
-function MakeMouse (mouseColor, mouseType, mouseSize, diseasedStatus) {
-    this.color = mouseColor
-    this.type = mouseType
-    this.size = mouseSize
-    this.diseased = diseasedStatus
-    // this.bluetooth = true
-    this.run = function(){}
-    this.hide = function(){}
-    this.eat = function(){}
-}
+function MakeCalculator (){
+    this.calculate = function(str){
+        //Convert string into an array using split(' ') with the space delimiter
+        let add = str.split(' ')
+        if (add[1] == "+"){
+            return +add[0] + +add[2]
+        } else if (add[1] == "-"){
+            return +add[0] - +add[2]
+        } else
+            return
+    }
 
-let mickey = new MakeMouse('Black', 'Cartoon', 'Life Sized', true)
+    this.addMethod = function(){
+
+    }
+}
 
 
 // /*****************************************************/
