@@ -177,23 +177,18 @@ function copyAndSortArr(arr){
 
 <<<<<<< Updated upstream
 // Object Constructor Function
-function MakeCalculator (){
-    this.calculate = function(str){
-        //Convert string into an array using split(' ') with the space delimiter
-        let add = str.split(' ')
-        if (add[1] == "+"){
-            return +add[0] + +add[2]
-        } else if (add[1] == "-"){
-            return +add[0] - +add[2]
-        } else
-            return
-    }
-
-    this.addMethod = function(){
-
-    }
+let exObj = {
+    key1: function(){
+        console.log("This is a function. Key1 is a method");
+    },
+    // key2 = function(){
+    //     console.log("this is also a function. Key2 is a method")
+    // }
 }
 
+exObj.key2() = function(){}
+
+// How do you create new methods???
 
 // /*****************************************************/
 =======
